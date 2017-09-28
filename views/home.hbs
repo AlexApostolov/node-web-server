@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <body>
+    {{> header}}
+    <!-- Use a helper function to make text all caps, and then pass it the needed text -->
+    <p>{{screamIt welcomeMessage}}</p>
+    <!-- Instead of injecting data, inject template partial with ">" -->
+    {{> footer}}
+  </body>
+</html>
