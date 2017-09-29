@@ -58,6 +58,12 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Project Work'
+  });
+});
+
 app.get('/about', (req, res) => {
   // Render Handlebars template for About page
   res.render('about.hbs', {
